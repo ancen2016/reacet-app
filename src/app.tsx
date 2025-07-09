@@ -66,8 +66,8 @@ export const layout: RunTimeLayoutConfig = ({
 }) => {
   return {
     actionsRender: () => [
-      <Question key="doc" />,
-      <SelectLang key="SelectLang" />,
+      /*<Question key="doc" />,
+      <SelectLang key="SelectLang" />,*/
     ],
     avatarProps: {
       src: initialState?.currentUser?.avatar,
@@ -124,7 +124,7 @@ export const layout: RunTimeLayoutConfig = ({
       return (
         <>
           {children}
-          {isDev && (
+          {/* {isDev && (
             <SettingDrawer
               disableUrlParams
               enableDarkTheme
@@ -136,7 +136,7 @@ export const layout: RunTimeLayoutConfig = ({
                 }));
               }}
             />
-          )}
+          )}*/}
         </>
       );
     },
